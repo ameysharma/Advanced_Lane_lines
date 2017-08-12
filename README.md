@@ -40,7 +40,7 @@ Line [class],correct_img()[function] ,procees()[function] and last moviepy edito
 
 
 
-> Challenge Video results in Challenge_results.mp4
-
+#### Project Limitations
+The Project has not been tested on various high brightness videos.So, there remains the possibility of some problems.However the software peforms great on much of the videos tested.
 
 
