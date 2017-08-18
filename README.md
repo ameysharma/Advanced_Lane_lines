@@ -45,5 +45,6 @@ Line [class],correct_img()[function] ,procees()[function] and last moviepy edito
 
 #### Project Limitations
 
-The above algorithm does not work well for the challenge video.This is because some adjustments needs to be done with image threshold and image parameters. The problem of finetuning can be seen in test images that had been taken from challenge video.
+The above algorithm does not work well for the harder challenge video.This is because some adjustments are needed for algorithm to work properly.
+
 
