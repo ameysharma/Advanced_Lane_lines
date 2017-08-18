@@ -16,19 +16,22 @@ The goals / steps of this project are the following:
 # (Image References)
 ### Plotting Corners Step one Output
 In this Step We took various angle of chessboard images and identified its corners using inbuild functions from cv2 library.For more details refer code.ipynb. 
-![](/results/P_chess/download.png)
+![](/results/edges.png)
 ### Correcting For Distortion
 In this step Using above corners and finding image and object points we rectified images for distortion errors.For more detials refer to the code. 
-![](/results/O2U.png)
+![](/results/dist.png)
 ### Undistorted and Wraped Image(Bird's Eye View)
 In  this step we converted undistorted image into bird's eye view using persprective transform from cv2 library.For more details refer to the code.
-![](/results/Wimg.png)
+![](/results/beye.png)
 ### Applying Gradient And Threshold
 In this we combined both sobelx  image output,taken by converting image into gray scale and taking sobelX characters, with 'S',taken HLS image transformation,to get proper line marks of the road.For more details refer to the code.  
-![](/results/GT.png)
+![](/results/trans.png)
+### Visualising Lines On The bindary image
+In this we calculated the points from binary wraped image and visualized image by drawing the lines on every wraped image.  
+![](/results/vis.png)
 ### Drawing Lane Lines
 In this we Drawed Lines using polyfit polynomial function using histogram function to find out exact point where lines has to be drawn.This line was filled with lighter color using polyfill lines function.For more details refer to the code. 
-![](/results/lines.png)
+![](results/Line.png)
 
 ###In Last Step the code was tested on video.
 Following functions details the about video line drawn technique.
@@ -41,6 +44,6 @@ Line [class],correct_img()[function] ,procees()[function] and last moviepy edito
 
 
 #### Project Limitations
-The Project has not been tested on various high brightness videos.So, there remains the possibility of some problems.However the software peforms great on much of the videos tested.
 
+The above algorithm does not work well for the challenge video.This is because some adjustments needs to be done with image threshold and image parameters. The problem of finetuning can be seen in test images that had been taken from challenge video.
 
